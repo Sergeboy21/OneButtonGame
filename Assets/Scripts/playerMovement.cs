@@ -43,7 +43,7 @@ public class playerMovement : MonoBehaviour
         Vector3 moveVector = Vector3.zero;
         moveVector.x = (targetPosition - transform.position).normalized.x * speed;
         moveVector.y = -0.1f;
-        moveVector.z = speed;
+        moveVector.z = 0f;
 
         //Move the player
         controller.Move(moveVector * Time.deltaTime);
